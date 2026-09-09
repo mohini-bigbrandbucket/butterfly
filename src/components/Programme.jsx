@@ -18,7 +18,7 @@ const days = [
     num: 'Day 3',
     name: (
       <>
-        EFTMRA &amp; Matrix Edge<sup>®</sup>
+        EFTMRA &amp; Matrix Edge
       </>
     ),
     sub: 'Sunday',

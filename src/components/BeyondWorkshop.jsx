@@ -2,7 +2,7 @@ const items = [
   {
     text: 'Concept revision and advanced demonstrations',
     icon: (
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 32 32" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M16 9C13.8 7.2 10.6 6.4 7 7V22.5C10.6 21.9 13.8 22.7 16 24.5"
           stroke="currentColor"
@@ -24,7 +24,7 @@ const items = [
   {
     text: 'Case studies and presentation reviews',
     icon: (
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 32 32" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M9 4H19L25 10V27C25 27.5523 24.5523 28 24 28H9C8.44772 28 8 27.5523 8 27V5C8 4.44772 8.44772 4 9 4Z"
           stroke="currentColor"
@@ -41,7 +41,7 @@ const items = [
   {
     text: 'Q&A and clarification of complex themes',
     icon: (
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 32 32" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M4 8.5C4 6.567 5.567 5 7.5 5H18.5C20.433 5 22 6.567 22 8.5V14.5C22 16.433 20.433 18 18.5 18H10L5.5 21.5V18H7.5C5.567 18 4 16.433 4 14.5V8.5Z"
           stroke="currentColor"
@@ -60,7 +60,7 @@ const items = [
   {
     text: 'Supervised practice sessions',
     icon: (
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 32 32" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="11" cy="9" r="3.2" stroke="currentColor" strokeWidth="1.6" />
         <path
           d="M4.5 22C4.5 17.8 7.4 15 11 15C14.6 15 17.5 17.8 17.5 22"
