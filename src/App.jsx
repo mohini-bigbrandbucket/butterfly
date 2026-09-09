@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import useScrollReveal from './hooks/useScrollReveal'
-import ScrollProgressBar from './components/scrollProgressBar'
+import ScrollProgressBar from './components/Scrollprogressbar'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Audience from './components/Audience'
