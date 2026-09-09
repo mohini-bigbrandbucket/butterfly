@@ -436,7 +436,26 @@ a {
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.3);
 }
+@media (max-width: 768px) {
+  .hero-date-loc-pill {
+    gap: 10px;
+    padding: 8px 12px;
+  }
 
+  .pill-item {
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .pill-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .pill-divider {
+    height: 18px;
+  }
+}
 .hero-features {
   display: flex;
   align-items: center;
