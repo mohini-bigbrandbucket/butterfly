@@ -120,10 +120,9 @@ export default function CTA() {
               href="https://pages.razorpay.com/EFT-Practitioners-training"
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                fontSize: '13.5px',
-                marginRight: '50px',
-              }}
+            style={{
+  fontSize: '13.5px',
+}}
               whileHover={{
                 scale: 1.05,
                 y: -2,
