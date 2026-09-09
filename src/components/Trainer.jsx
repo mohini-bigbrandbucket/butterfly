@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 
 export default function Trainer() {
@@ -225,7 +226,7 @@ export default function Trainer() {
                   },
                 }}
               >
-                Founder of <strong>The Butterfly Effect</strong>, having worked with
+                Founder of <strong>The Butterfly Effect</strong>, she has worked with
                 thousands of individuals, corporate leaders, and practitioners.
               </motion.li>
 
@@ -245,7 +246,7 @@ export default function Trainer() {
                   },
                 }}
               >
-                Known for her warm, deeply present, trauma-informed teaching style.
+                She is known for her warm, deeply present, trauma-informed teaching style.
               </motion.li>
 
               <motion.li
@@ -264,8 +265,10 @@ export default function Trainer() {
                   },
                 }}
               >
-                Integrates EFT with Matrix Reimprinting, Somatic Experiencing, Family
-                Constellations, Coaching, and other therapeutic modalities.
+                Her work integrates EFT with approaches such as Matrix Reimprinting,
+                Somatic Experiencing, Family Constellations, Coaching, and other
+                therapeutic modalities, allowing her to bring both depth and practical
+                clarity to practitioner training.
               </motion.li>
 
               <motion.li
@@ -284,8 +287,9 @@ export default function Trainer() {
                   },
                 }}
               >
-                Focused on building practitioners' confidence, sensitivity, and clinical
-                judgement — not just technique.
+                Her focus is not simply on teaching techniques, but on helping
+                practitioners develop the confidence, sensitivity, and clinical judgement
+                to facilitate meaningful change safely and effectively.
               </motion.li>
             </motion.ul>
           </motion.div>
@@ -294,3 +298,4 @@ export default function Trainer() {
     </section>
   )
 }
+
