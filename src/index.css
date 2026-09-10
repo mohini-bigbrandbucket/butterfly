@@ -1590,6 +1590,11 @@ a {
 }
 
 /* Trainer Section */
+.trainer-section {
+  padding: var(--section-space) 0;
+  background: var(--warm-bg);
+}
+
 .trainer-card {
   background: var(--pure-white);
   border: 1px solid var(--border-beige);
@@ -2176,6 +2181,7 @@ a {
   opacity: 1;
   pointer-events: auto;
 }
+
 .sticky-whatsapp:hover {
   transform: translateZ(0) scale(1.08);
   -webkit-transform: translateZ(0) scale(1.08);
@@ -2284,7 +2290,7 @@ a {
     border-radius: 4px;
     white-space: nowrap;
   }
-   .sticky-whatsapp {
+  .sticky-whatsapp {
     bottom: calc(72px + env(safe-area-inset-bottom));
   }
   .hero-features {
@@ -2336,7 +2342,7 @@ a {
   }
   .brand-logo-img {
     height: 46px;
-   margin-left: 0px;
+    margin-left: 0px;
   }
   .nav-right {
     margin-right: 16px;
@@ -2701,11 +2707,11 @@ a {
   /* Countdown card: shrink contents for phone widths so it doesn't
      dominate the hero — the min-height:160px from the base rule was
      forcing extra empty space here. */
-.countdown-card {
-  min-height: auto;
-  padding: 14px 16px 16px;
-  margin: -20px var(--side-pad) 4px;
-}
+  .countdown-card {
+    min-height: auto;
+    padding: 14px 16px 16px;
+    margin: -20px var(--side-pad) 4px;
+  }
   .countdown-heading {
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -2812,15 +2818,9 @@ a {
   }
 
   /* Countdown card: one more notch down for the smallest phones */
- .countdown-card {
-  position: relative;
-  right: auto;
-  bottom: auto;
-  width: auto;
-  max-width: none;
-  margin: 0 var(--side-pad) 4px;
-  transform: translateY(-35px);
-}
+  .countdown-card {
+    margin: -30px var(--side-pad) 4px;
+  }
   .countdown-heading {
     font-size: 13.5px;
   }
@@ -3141,8 +3141,8 @@ body {
    touched. Everything below is purely additive.
 
    Driven by src/hooks/useScrollReveal.js (IntersectionObserver
-   toggles .is-visible once per element) and, for the hero
-   parallax, src/components/Hero.jsx directly.
+   toggles .is-visible on/off as elements enter/exit view) and,
+   for the hero parallax, src/components/Hero.jsx directly.
 
    Every hidden/animated state lives inside
    prefers-reduced-motion: no-preference, so reduced-motion
