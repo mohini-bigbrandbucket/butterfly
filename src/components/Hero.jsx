@@ -117,7 +117,8 @@ export default function Hero() {
         className="hero-image-wrap"
         variants={imageAnimation}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div
           className="hero-parallax-layer"
@@ -141,7 +142,8 @@ export default function Hero() {
             className="hero-title"
             variants={fadeUp}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.2 }}
           >
             <span className="hero-title-white">
@@ -165,7 +167,8 @@ export default function Hero() {
             className="hero-lead"
             variants={fadeUp}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.4 }}
           >
             Evidence-based, trauma-informed training for
@@ -178,7 +181,8 @@ export default function Hero() {
             className="hero-cta-wrap"
             variants={fadeUp}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.55 }}
           >
             <motion.a
@@ -211,7 +215,8 @@ export default function Hero() {
             className="hero-date-loc-pill"
             variants={fadeUp}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.7 }}
           >
             <div className="pill-item">
@@ -298,7 +303,8 @@ export default function Hero() {
             className="hero-features"
             variants={featuresContainer}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
           >
 
             {/* FEATURE 1 */}
@@ -438,7 +444,8 @@ export default function Hero() {
           },
         }}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="countdown-heading">
           {isPast
