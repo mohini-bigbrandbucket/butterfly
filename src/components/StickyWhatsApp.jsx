@@ -1,8 +1,34 @@
+import { useEffect, useState } from 'react'
+
 export default function StickyWhatsApp() {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const hero = document.querySelector('.hero')
+    if (!hero) {
+      // Agar hero section na mile to safe default: icon dikhta rahe
+      setVisible(true)
+      return undefined
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Jab hero screen se bahar (upar) chala jaye tab visible = true
+        setVisible(!entry.isIntersecting)
+      },
+      {
+        threshold: 0,
+      }
+    )
+
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <a
       href="https://wa.me/9810598658"
-      className="sticky-whatsapp"
+      className={`sticky-whatsapp ${visible ? 'is-visible' : 'is-hidden'}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
