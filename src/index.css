@@ -510,7 +510,7 @@ a {
 .feature-divider {
   width: 1px;
   height: 38px;
-  background: rgba(255, 255, 255, 0.22);
+  background: var(--light-gold);
   flex-shrink: 0;
   margin: 0 13px;
 }
@@ -2290,8 +2290,17 @@ a {
   .feature-text {
     white-space: normal;
   }
+  .feature-text span {
+    font-size: 10px;
+    line-height: 1.25;
+  }
   .feature-divider {
-    display: none;
+    display: block;
+    height: 30px;
+    width: 1.5px;
+    margin: 0 6px;
+    align-self: center;
+    background: var(--light-gold);
   }
   .ornate-heading {
     gap: 10px;
@@ -2318,7 +2327,7 @@ a {
   }
   .brand-logo-img {
     height: 46px;
-    margin-left: 16px;
+   margin-left: 0px;
   }
   .nav-right {
     margin-right: 16px;
@@ -2683,11 +2692,11 @@ a {
   /* Countdown card: shrink contents for phone widths so it doesn't
      dominate the hero — the min-height:160px from the base rule was
      forcing extra empty space here. */
-  .countdown-card {
-    min-height: auto;
-    padding: 14px 16px 16px;
-    margin: 12px var(--side-pad) 0;
-  }
+.countdown-card {
+  min-height: auto;
+  padding: 14px 16px 16px;
+  margin: -20px var(--side-pad) 4px;
+}
   .countdown-heading {
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -2794,9 +2803,15 @@ a {
   }
 
   /* Countdown card: one more notch down for the smallest phones */
-  .countdown-card {
-    padding: 12px 14px 14px;
-  }
+ .countdown-card {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  width: auto;
+  max-width: none;
+  margin: 0 var(--side-pad) 4px;
+  transform: translateY(-35px);
+}
   .countdown-heading {
     font-size: 13.5px;
   }
