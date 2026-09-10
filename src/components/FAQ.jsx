@@ -105,7 +105,7 @@ export default function FAQ() {
             y: 0,
           }}
           viewport={{
-            once: true,
+            once: false,
             amount: 0.3,
           }}
           transition={{
@@ -122,7 +122,7 @@ export default function FAQ() {
               scaleX: 1,
             }}
             viewport={{
-              once: true,
+              once: false,
             }}
             transition={{
               duration: 0.7,
@@ -142,7 +142,7 @@ export default function FAQ() {
               scaleX: 1,
             }}
             viewport={{
-              once: true,
+              once: false,
             }}
             transition={{
               duration: 0.7,
@@ -158,7 +158,7 @@ export default function FAQ() {
           initial="hidden"
           whileInView="visible"
           viewport={{
-            once: true,
+            once: false,
             amount: 0.15,
           }}
           variants={{

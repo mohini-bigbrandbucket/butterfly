@@ -138,7 +138,7 @@ export default function Audience() {
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <span className="ornate-line"></span>
 
@@ -152,7 +152,7 @@ export default function Audience() {
           variants={subtitleVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           Designed for those who hold space for deep transformation.
         </motion.p>
@@ -162,7 +162,7 @@ export default function Audience() {
           variants={cardsContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           {cards.map((card, i) => (
             <motion.article

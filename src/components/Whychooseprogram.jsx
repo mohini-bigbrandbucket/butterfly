@@ -194,7 +194,7 @@ export default function WhyChooseProgram() {
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <span className="ornate-line"></span>
 
@@ -209,7 +209,7 @@ export default function WhyChooseProgram() {
           variants={introContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.35 }}
+          viewport={{ once: false, amount: 0.35 }}
         >
           <motion.p variants={introVariants}>
             As EFT becomes more widely known, the number of weekend tapping workshops has grown
@@ -230,7 +230,7 @@ export default function WhyChooseProgram() {
           variants={cardsContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
+          viewport={{ once: false, amount: 0.15 }}
         >
           {points.map((p, i) => (
             <motion.div

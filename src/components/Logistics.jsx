@@ -95,7 +95,7 @@ export default function Logistics() {
           className="logistics-card"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.12 }}
+          viewport={{ once: false, amount: 0.12 }}
         >
 
           <div className="logistics-top-row">
@@ -201,7 +201,7 @@ export default function Logistics() {
               className="logistics-divider"
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.8, delay: 0.2 }}
             />
 
@@ -257,7 +257,7 @@ export default function Logistics() {
             className="logistics-horizontal-divider"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.7 }}
           />
 
@@ -297,7 +297,7 @@ export default function Logistics() {
             className="logistics-horizontal-divider"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.7 }}
           />
 

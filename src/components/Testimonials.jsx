@@ -55,7 +55,7 @@ export default function Testimonials({ onPlay }) {
           className="ornate-heading"
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{
             duration: 0.7,
             ease: 'easeOut',
@@ -71,7 +71,7 @@ export default function Testimonials({ onPlay }) {
           className="testimonial-grid"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
+          viewport={{ once: false, amount: 0.15 }}
           transition={{
             staggerChildren: 0.15,
           }}
@@ -125,7 +125,7 @@ export default function Testimonials({ onPlay }) {
                   }}
                   initial={{ scale: 0.85, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   transition={{
                     duration: 0.45,
                     delay: 0.2 + i * 0.08,

@@ -85,7 +85,7 @@ export default function WhyEFT() {
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
 
           <div className="why-top">
@@ -120,7 +120,7 @@ export default function WhyEFT() {
                 scaleY: 1,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.7,

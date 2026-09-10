@@ -16,7 +16,7 @@ export default function Trainer() {
             y: 0,
           }}
           viewport={{
-            once: true,
+            once: false,
             amount: 0.2,
           }}
           transition={{
@@ -38,7 +38,7 @@ export default function Trainer() {
               scale: 1,
             }}
             viewport={{
-              once: true,
+              once: false,
               amount: 0.3,
             }}
             transition={{
@@ -73,7 +73,7 @@ export default function Trainer() {
               x: 0,
             }}
             viewport={{
-              once: true,
+              once: false,
               amount: 0.3,
             }}
             transition={{
@@ -93,7 +93,7 @@ export default function Trainer() {
                 y: 0,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.5,
@@ -114,7 +114,7 @@ export default function Trainer() {
                 y: 0,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.6,
@@ -136,7 +136,7 @@ export default function Trainer() {
                 y: 0,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.6,
@@ -158,7 +158,7 @@ export default function Trainer() {
                 y: 0,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.5,
@@ -179,7 +179,7 @@ export default function Trainer() {
                 y: 0,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.6,
@@ -197,7 +197,7 @@ export default function Trainer() {
               initial="hidden"
               whileInView="visible"
               viewport={{
-                once: true,
+                once: false,
                 amount: 0.2,
               }}
               variants={{

@@ -90,7 +90,7 @@ export default function Programme() {
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <span className="ornate-line"></span>
           <h2>The 3-Day Programme</h2>
@@ -102,7 +102,7 @@ export default function Programme() {
           variants={rowsContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           {days.map((d, i) => (
             <motion.div
@@ -140,7 +140,7 @@ export default function Programme() {
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: false, amount: 0.25 }}
           transition={{
             duration: 0.7,
             delay: 0.2,

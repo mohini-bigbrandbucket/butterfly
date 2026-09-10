@@ -15,7 +15,7 @@ export default function CTA() {
             y: 0,
           }}
           viewport={{
-            once: true,
+            once: false,
             amount: 0.25,
           }}
           transition={{
@@ -35,7 +35,7 @@ export default function CTA() {
               x: 0,
             }}
             viewport={{
-              once: true,
+              once: false,
               amount: 0.3,
             }}
             transition={{
@@ -54,7 +54,7 @@ export default function CTA() {
                 y: 0,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.6,
@@ -81,7 +81,7 @@ export default function CTA() {
                 y: 0,
               }}
               viewport={{
-                once: true,
+                once: false,
               }}
               transition={{
                 duration: 0.6,
@@ -106,7 +106,7 @@ export default function CTA() {
               scale: 1,
             }}
             viewport={{
-              once: true,
+              once: false,
               amount: 0.3,
             }}
             transition={{

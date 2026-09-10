@@ -1,9 +1,8 @@
 import { useEffect } from 'react'
 
-// Every element carrying one of these classes starts hidden (see the
-// "CINEMATIC SCROLL ANIMATION SYSTEM" block in the stylesheet) and is
-// revealed the first time it crosses into the viewport. Once revealed it
-// stays revealed — we don't want content flickering out again on re-scroll.
+// Every element carrying one of these classes toggles `.is-visible` every
+// time it crosses into or out of the viewport — so the animation replays
+// on every scroll pass, not just the first time.
 const REVEAL_SELECTOR = [
   '.reveal',
   '.reveal-nav',
@@ -18,13 +17,12 @@ const REVEAL_SELECTOR = [
 /**
  * Call this once, near the top of the component tree (e.g. in App.jsx).
  * It scans the whole document for revealable elements after mount and
- * toggles `.is-visible` on each one via IntersectionObserver.
+ * toggles `.is-visible` on each one via IntersectionObserver — adding it
+ * when the element enters the viewport and removing it when the element
+ * leaves, so the animation replays every time.
  *
  * Respects prefers-reduced-motion: if the user has that set, everything
- * is marked visible immediately instead of waiting on scroll — the CSS
- * already scopes all the hidden/animated states to
- * `@media (prefers-reduced-motion: no-preference)`, so this just keeps
- * behavior consistent with that.
+ * is marked visible immediately and never toggled off.
  */
 export default function useScrollReveal() {
   useEffect(() => {
@@ -45,7 +43,8 @@ export default function useScrollReveal() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible')
-            observer.unobserve(entry.target)
+          } else {
+            entry.target.classList.remove('is-visible')
           }
         })
       },

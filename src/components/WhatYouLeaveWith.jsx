@@ -132,7 +132,7 @@ export default function WhatYouLeaveWith() {
           className="ornate-heading"
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
           <span className="ornate-line"></span>
@@ -146,7 +146,7 @@ export default function WhatYouLeaveWith() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
+          viewport={{ once: false, amount: 0.15 }}
         >
 
           {/* Personally */}
@@ -164,7 +164,7 @@ export default function WhatYouLeaveWith() {
                 className="leave-with-icon leave-with-icon--light"
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{
                   duration: 0.5,
                   delay: 0.2,
@@ -210,7 +210,7 @@ export default function WhatYouLeaveWith() {
                 className="leave-with-icon leave-with-icon--dark"
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{
                   duration: 0.5,
                   delay: 0.3,
